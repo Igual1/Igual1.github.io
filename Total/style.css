@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #000033 0%, #0a0a0a 100%);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 66%;
+    margin: 20px auto;
+    margin-top: 90px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.box {
+    background: linear-gradient(to right, #002366, #0050ef);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box span {
+    margin-right: 10px;
+}
+
+.box-content {
+    display: none;
+    padding: 10px;
+    background-color: #0050ef;
+    border-radius: 5px 5px 5px 5px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s ease-out;
+}
+
+.box.active .box-content {
+    display: block;
+    max-height: 200px; /* Ajuste conforme a quantidade de conteúdo */
+}
+
+.box .arrow {
+    transition: transform 0.6s;
+}
+
+.box.active .arrow {
+    transform: rotate(90deg);
+}
+
+.home-icon {
+    margin-top: 20px;
+}
+
+/*--------------------------------------------------*/
+
+.total-saldo { /* Ajuste a posição para não sobrepor o ícone HOME */
+    right: 20px;
+    background: linear-gradient(to right, #002366, #0050ef);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+     
+
+
+/*-----------------------------------*/
+
+
+#environments-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 300px; /* Define a altura da área rolável */
+    overflow-y: auto; /* Permite rolagem vertical */
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    scrollbar-color: #ededee transparent; 
+    scrollbar-width: thin; /* Define a largura da barra de rolagem como fina */
+    scrollbar-gutter: 5px;
+}
+
+#environments-container::-webkit-scrollbar {
+    /* Outros estilos... */
+    background-color: transparent; /* Define a cor de fundo da barra de rolagem para transparente */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EcoApp</h1>
+        <p>Adicione seus eletrodomésticos!</p>
+        <div id="environments-container">
+            <div id="environments"><div id="environments">     
+                <div class="add-environment">
+                    <button class="delete-btn" onclick="removeEnvironment(this)">X</button>
+                    <div class="inputs">
+                        <input id="fixed-name" type="text" placeholder="Adicione um eletrodoméstico...">
+                        <input id="fixed-energy" type="text" placeholder="Energia gasta (W)...">
+                        <input id="fixed-hours" type="text" placeholder="Horas consumidas...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="displayy">
+        <div id="mais" onclick="addEnvironment()">
+            <div class="gap">
+                <img src="mais.png" alt="plus" width="40px" height="40px">
+            </div>
+        </div>
+        <a id="total-button" href="/Total/index.html">
+            <div class="gap">
+                <a href="/Total/index.html"><img src="total.png" alt="plus" width="40px" height="40px"></a>
+            </div>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de Energia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="sustainable-energy.png" alt="EcoApp Logo" height="80px" width="80px">
+        </div>
+        <h4 class="title">Confira o consumo de energia gasto de cada eletrodoméstico:</h4>
+        <div id="environments-container">
+            <div id="boxes-container">
+                <div id="fixed-box" class="box">
+                    <span class="arrow">></span>
+                    <span id="fixed-name-display">Ambiente Inicial</span>
+                    <div class="box-content">
+                        <p>Energia gasta: <span id="fixed-energy-display">-</span></p>
+                        <p>Horas consumidas: <span id="fixed-hours-display">-</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="total-saldo" id="total-saldo">
+            Gasto mensal: R$<span id="total-saldo-value">0.00</span>
+        </div>
+        <div class="home-icon">
+            <a href="/Ambientes/index.html"><img src="botao-home.png" alt="Home" height="40px" width="40px"></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+    
